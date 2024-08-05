@@ -184,7 +184,7 @@ header nav ul li a:hover::after {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: red;
+  background-color: white;
 }
 header nav ul li a:hover::before {
   content: "";
@@ -296,7 +296,7 @@ h6 {
 }
 
 body {
-  background-image: url("../images/valorant-cover.jpeg");
+  background-image: url("../images/valorant-cover4.png");
   background-repeat: no-repeat;
   background-position: bottom;
   height: 300px;
@@ -315,7 +315,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    height: 45vh;
+    height: 50vh;
   }
 }
 
