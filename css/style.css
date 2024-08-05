@@ -341,8 +341,8 @@ main .play-now {
       flex-wrap: wrap;
   gap: 15px;
   border: none;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 8, 0)), to(rgb(247, 52, 52)));
-  background: linear-gradient(to right, rgb(255, 8, 0), rgb(247, 52, 52));
+  background: -webkit-gradient(linear, left top, right top, from(rgb(255, 27, 19)), to(rgb(255, 85, 85)));
+  background: linear-gradient(to right, rgb(255, 27, 19), rgb(255, 85, 85));
   padding: 10px 30px;
   color: whitesmoke;
   border-radius: 16px;
