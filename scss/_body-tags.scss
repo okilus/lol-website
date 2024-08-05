@@ -1,0 +1,54 @@
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+body {
+    background-image: url('../images/valorant-cover.jpeg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 300px;
+
+    @media (min-width: $l) {
+        height: 40vh;
+    }
+
+    @media (min-width: $xl) {
+        height: 45vh;
+    }
+
+    background-color: rgb(22, 0, 0);
+    color: white;
+    background-size: cover;
+    width: 100%;
+    font-size: 1em;
+    font-family: 'Mark Pro',
+    Arial,
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
