@@ -127,6 +127,10 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -138,7 +142,7 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 20px;
+    padding: 20px 50px;
     background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(rgb(131, 0, 0)), to(rgb(0, 0, 0)));
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(131, 0, 0), rgb(0, 0, 0));
     position: fixed;
@@ -211,7 +215,7 @@ header input {
   padding: 5px 20px;
   color: white;
   font-size: 18px;
-  border: 1px solid rgb(75, 75, 75);
+  border: 1px solid rgb(44, 44, 44);
 }
 header input::-webkit-input-placeholder {
   color: gray;
@@ -331,6 +335,10 @@ main .play-now {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -710,6 +718,10 @@ main .section-4 .container .box-1 .grp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

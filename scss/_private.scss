@@ -43,3 +43,20 @@
     cursor: pointer;
     padding: 3px;
 }
+
+%xbox-playstation-btn {
+    width: 80vw;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    @include transition;
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(168, 59, 59);
+    }
+    @media (min-width: $l) {
+        width: 250px;
+        height: 70px;
+    }
+}
