@@ -125,7 +125,7 @@ main {
         @include flex-col;
         gap: 40px;
         padding-top: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
 
         @media(min-width: $xl) {
             h3 {
@@ -133,15 +133,18 @@ main {
                 padding-left: 3%;
             }
         }
+
         .videos {
             display: grid;
             gap: 30px;
             justify-items: center;
+
             @media (min-width: $l) {
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
+
             @media (min-width: $xl) {
-                grid-template-columns: repeat(4,1fr);
+                grid-template-columns: repeat(4, 1fr);
             }
 
             iframe {
@@ -152,13 +155,16 @@ main {
                 @media (min-width: $sm) {
                     height: 250px;
                 }
+
                 @media (min-width: $md) {
                     height: 350px;
                 }
+
                 @media (min-width: $l) {
                     width: 45vw;
                     height: 250px;
                 }
+
                 @media (min-width: $xl) {
                     width: 22vw;
                     height: 200px;
@@ -169,12 +175,12 @@ main {
     }
 
     .section-3 {
-        padding-top: 100px; 
+        padding-top: 100px;
         padding-bottom: 100px;
         @include flex-col;
         gap: 30px;
         background-color: rgb(0, 15, 7);
-        
+
         .roles {
             display: grid;
             justify-items: center;
@@ -185,29 +191,43 @@ main {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 100px 0px;
             }
+
             @media(min-width: $l) {
                 grid-template-columns: repeat(4, 1fr);
-                
+
             }
+
+            @media(min-width: $xl) {
+                gap: 0px;
+                padding-inline: 50px;
+            }
+
             .char {
                 @include flex-col;
                 gap: 20px;
-    
+
+
+
                 img {
                     width: 80vw;
                     height: 110vw;
                     object-fit: cover;
 
+                    &:hover {
+                        cursor: pointer;
+                    }
+
                     @media(min-width: $md) {
                         width: 45vw;
                         height: 60vw;
                     }
+
                     @media(min-width: $l) {
-                        width: 23vw;
-                        height: 35vw;
+                        width: 20vw;
+                        height: 30vw;
                     }
                 }
-    
+
                 p {
                     text-align: center;
                     width: 80%;
@@ -217,8 +237,8 @@ main {
                         width: 90%;
                     }
                 }
-    
-                
+
+
             }
         }
     }
@@ -228,9 +248,11 @@ main {
         width: 100%;
         height: 400px;
         margin-bottom: 30px;
+
         @media(min-width: $l) {
             height: 500px;
         }
+
         .container {
             @include flex-col;
             gap: 30px;
@@ -238,6 +260,7 @@ main {
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
             p {
                 text-align: center;
                 width: 80%;
@@ -250,6 +273,7 @@ main {
 
             h2 {
                 font-weight: 800;
+
                 @media (min-width: $l) {
                     font-size: 40px;
                 }

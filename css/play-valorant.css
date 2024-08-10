@@ -404,7 +404,7 @@ main .section-2 {
       flex-wrap: wrap;
   gap: 40px;
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 @media (min-width: 1600px) {
   main .section-2 h3 {
@@ -495,6 +495,12 @@ main .section-3 .roles {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+@media (min-width: 1600px) {
+  main .section-3 .roles {
+    gap: 0px;
+    padding-inline: 50px;
+  }
+}
 main .section-3 .roles .char {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,6 +525,9 @@ main .section-3 .roles .char img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .section-3 .roles .char img:hover {
+  cursor: pointer;
+}
 @media (min-width: 768px) {
   main .section-3 .roles .char img {
     width: 45vw;
@@ -527,8 +536,8 @@ main .section-3 .roles .char img {
 }
 @media (min-width: 1024px) {
   main .section-3 .roles .char img {
-    width: 23vw;
-    height: 35vw;
+    width: 20vw;
+    height: 30vw;
   }
 }
 main .section-3 .roles .char p {
@@ -599,4 +608,4 @@ main .section-4 .container button {
   height: 60px;
   background-color: rgb(6, 0, 40);
   color: white;
-}/*# sourceMappingURL=valorant.css.map */
+}/*# sourceMappingURL=play-valorant.css.map */
