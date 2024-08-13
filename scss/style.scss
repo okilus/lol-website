@@ -3,37 +3,10 @@
 @import './mixins';
 @import './private';
 @import './header';
+@import './responsive-title';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './footer';
 
-h1 {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 32px;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-h4 {
-    font-size: 22px;
-    font-weight: 600;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-h6 {
-    font-size: 16px;
-    font-weight: 500;
-}
 
 body {
     background-image: url('../images/valorant-cover4.png');
@@ -97,14 +70,6 @@ main {
             padding: 20px 50px;
             left: 250px;
             top: 180px;
-
-            a {
-
-
-                h4 {
-                    font-size: 30px;
-                }
-            }
         }
 
         @media (min-width: $xl) {
@@ -186,11 +151,6 @@ main {
                 @media (min-width: $l) {
                     align-self: flex-start;
                 }
-
-                @media (min-width: $xl) {
-                    font-size: 34px;
-
-                }
             }
 
             .container-1 {
@@ -224,14 +184,9 @@ main {
                         @extend %box-h6;
 
                         @media(min-width: $sm) {
-                            left: 5%;
-                            font-size: 20px;
+                            left: 5%;   
                         }
 
-                        @media (min-width: $xl) {
-                            font-size: 28px;
-
-                        }
 
                         font-weight: 550;
                         transform: translateY(-50%);
@@ -254,11 +209,6 @@ main {
 
                 @media (min-width: $l) {
                     align-self: flex-start;
-                }
-
-                @media (min-width: $xl) {
-                    font-size: 34px;
-
                 }
             }
 
@@ -294,13 +244,9 @@ main {
 
                         @media(min-width: $sm) {
                             left: 5%;
-                            font-size: 20px;
+                            
                         }
 
-                        @media (min-width: $xl) {
-                            font-size: 28px;
-
-                        }
                     }
                 }
             }
@@ -320,11 +266,6 @@ main {
 
                 @media (min-width: $l) {
                     align-self: flex-start;
-                }
-
-                @media (min-width: $xl) {
-                    font-size: 34px;
-
                 }
             }
 
@@ -358,12 +299,7 @@ main {
 
                         @media(min-width: $sm) {
                             left: 5%;
-                            font-size: 20px;
-                        }
-
-                        @media (min-width: $xl) {
-                            font-size: 28px;
-
+                        
                         }
                     }
                 }
@@ -375,8 +311,6 @@ main {
     .section-4 {
         width: auto;
         height: auto;
-        padding-bottom: 30px;
-
         .container {
             width: 100%;
             height: 100%;
@@ -393,16 +327,6 @@ main {
                 @media (min-width: $l) {
                     height: 45vw;
                     gap: 50px;
-
-                    h2 {
-                        font-size: 40px;
-                    }
-
-                    p {
-                        font-size: 18px;
-                        font-weight: 500;
-
-                    }
                 }
 
                 height: 400px;
@@ -413,11 +337,6 @@ main {
 
                 @media(min-width: $xl) {
                     height: 35vw;
-
-                    h2 {
-                        font-size: 46px;
-                    }
-
                     gap: 60px;
                 }
 
@@ -441,7 +360,6 @@ main {
                             padding: 35px 0px;
 
                             h5 {
-                                font-size: 24px;
                                 padding-top: 30px;
                             }
                         }

@@ -273,30 +273,125 @@ h1 {
   font-size: 36px;
   font-weight: 700;
 }
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 50px;
+    font-weight: 800;
+  }
+}
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 56px;
+    font-weight: 800;
+  }
+}
 
 h2 {
   font-size: 32px;
   font-weight: 700;
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 44px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1600px) {
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
 }
 
 h3 {
   font-size: 24px;
   font-weight: 600;
 }
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 38px;
+    font-weight: 700;
+  }
+}
+@media (min-width: 1600px) {
+  h3 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+}
 
 h4 {
   font-size: 22px;
   font-weight: 600;
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 34px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1600px) {
+  h4 {
+    font-size: 36px;
+    font-weight: 600;
+  }
 }
 
 h5 {
   font-size: 18px;
   font-weight: 500;
 }
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1600px) {
+  h5 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
 
 h6 {
   font-size: 16px;
   font-weight: 500;
+}
+@media (min-width: 1024px) {
+  h6 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1600px) {
+  h6 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1600px) {
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(28, 28, 28);
+  color: lightgray;
+  text-align: center;
+  padding-top: 35px;
+  font-size: 600;
 }
 
 body {
@@ -373,9 +468,6 @@ main .play-now {
     padding: 20px 50px;
     left: 250px;
     top: 180px;
-  }
-  main .play-now a h4 {
-    font-size: 30px;
   }
 }
 @media (min-width: 1600px) {
@@ -468,11 +560,6 @@ main .section-3 .grp h2 {
         align-self: flex-start;
   }
 }
-@media (min-width: 1600px) {
-  main .section-3 .grp h2 {
-    font-size: 34px;
-  }
-}
 main .section-3 .grp .container-1 {
   padding-top: 30px;
 }
@@ -499,12 +586,6 @@ main .section-3 .grp .container-1__box h6 {
 @media (min-width: 480px) {
   main .section-3 .grp .container-1__box h6 {
     left: 5%;
-    font-size: 20px;
-  }
-}
-@media (min-width: 1600px) {
-  main .section-3 .grp .container-1__box h6 {
-    font-size: 28px;
   }
 }
 main .section-3 .grp-2 {
@@ -542,11 +623,6 @@ main .section-3 .grp-2 h3 {
         align-self: flex-start;
   }
 }
-@media (min-width: 1600px) {
-  main .section-3 .grp-2 h3 {
-    font-size: 34px;
-  }
-}
 main .section-3 .grp-2 .container-2 {
   padding-top: 30px;
 }
@@ -568,12 +644,6 @@ main .section-3 .grp-2 .container-2__box-2 {
 @media (min-width: 480px) {
   main .section-3 .grp-2 .container-2__box-2 h6 {
     left: 5%;
-    font-size: 20px;
-  }
-}
-@media (min-width: 1600px) {
-  main .section-3 .grp-2 .container-2__box-2 h6 {
-    font-size: 28px;
   }
 }
 main .section-3 .grp-3 {
@@ -611,11 +681,6 @@ main .section-3 .grp-3 h3 {
         align-self: flex-start;
   }
 }
-@media (min-width: 1600px) {
-  main .section-3 .grp-3 h3 {
-    font-size: 34px;
-  }
-}
 main .section-3 .grp-3 .container-3 {
   padding-top: 30px;
 }
@@ -637,18 +702,11 @@ main .section-3 .grp-3 .container-3__box-3 img {
 @media (min-width: 480px) {
   main .section-3 .grp-3 .container-3__box-3 h6 {
     left: 5%;
-    font-size: 20px;
-  }
-}
-@media (min-width: 1600px) {
-  main .section-3 .grp-3 .container-3__box-3 h6 {
-    font-size: 28px;
   }
 }
 main .section-4 {
   width: auto;
   height: auto;
-  padding-bottom: 30px;
 }
 main .section-4 .container {
   width: 100%;
@@ -692,21 +750,11 @@ main .section-4 .container .box-1 {
     height: 45vw;
     gap: 50px;
   }
-  main .section-4 .container .box-1 h2 {
-    font-size: 40px;
-  }
-  main .section-4 .container .box-1 p {
-    font-size: 18px;
-    font-weight: 500;
-  }
 }
 @media (min-width: 1600px) {
   main .section-4 .container .box-1 {
     height: 35vw;
     gap: 60px;
-  }
-  main .section-4 .container .box-1 h2 {
-    font-size: 46px;
   }
 }
 main .section-4 .container .box-1 p {
@@ -750,7 +798,6 @@ main .section-4 .container .box-1 .grp .offices {
   }
   main .section-4 .container .box-1 .grp .positions h5,
   main .section-4 .container .box-1 .grp .offices h5 {
-    font-size: 24px;
     padding-top: 30px;
   }
 }

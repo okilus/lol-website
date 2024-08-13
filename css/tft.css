@@ -66,6 +66,17 @@ a {
   color: unset;
 }
 
+main .middle-container a button, main .section-2 .container-3 .box-3 a button, main .section-2 .container-1 .box-1 a button, main .section-1 .container .box a button {
+  background-color: rgb(89, 0, 255);
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+main .middle-container a button:hover, main .section-2 .container-3 .box-3 a button:hover, main .section-2 .container-1 .box-1 a button:hover, main .section-1 .container .box a button:hover {
+  cursor: pointer;
+}
+
 header {
   width: 100%;
 }
@@ -222,13 +233,13 @@ h1 {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 800;
   }
 }
 @media (min-width: 1600px) {
   h1 {
-    font-size: 50px;
+    font-size: 56px;
     font-weight: 800;
   }
 }
@@ -239,14 +250,14 @@ h2 {
 }
 @media (min-width: 1024px) {
   h2 {
-    font-size: 36px;
-    font-weight: 800;
+    font-size: 44px;
+    font-weight: 700;
   }
 }
 @media (min-width: 1600px) {
   h2 {
-    font-size: 46px;
-    font-weight: 800;
+    font-size: 48px;
+    font-weight: 700;
   }
 }
 
@@ -256,14 +267,14 @@ h3 {
 }
 @media (min-width: 1024px) {
   h3 {
-    font-size: 34px;
+    font-size: 38px;
     font-weight: 700;
   }
 }
 @media (min-width: 1600px) {
   h3 {
     font-size: 42px;
-    font-weight: 800;
+    font-weight: 700;
   }
 }
 
@@ -271,15 +282,51 @@ h4 {
   font-size: 22px;
   font-weight: 600;
 }
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 34px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1600px) {
+  h4 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
 
 h5 {
   font-size: 18px;
   font-weight: 500;
 }
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1600px) {
+  h5 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
 
 h6 {
   font-size: 16px;
   font-weight: 500;
+}
+@media (min-width: 1024px) {
+  h6 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1600px) {
+  h6 {
+    font-size: 28px;
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -288,6 +335,22 @@ h6 {
     font-weight: 500;
   }
 }
+@media (min-width: 1600px) {
+  p {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(28, 28, 28);
+  color: lightgray;
+  text-align: center;
+  padding-top: 35px;
+  font-size: 600;
+}
 
 body {
   background-color: rgb(22, 0, 0);
@@ -295,6 +358,23 @@ body {
   font-size: 1em;
   font-family: "Mark Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+.header-tft {
+  color: red;
+}
+.header-tft::before {
+  content: "";
+  width: 160%;
+  height: 40px;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: black;
+  z-index: -1;
 }
 
 main .section-1 .container {
@@ -363,17 +443,9 @@ main .section-1 .container .box h1 {
   color: rgba(255, 255, 255, 0.9);
 }
 main .section-1 .container .box a button {
-  background-color: rgb(89, 0, 255);
   width: 250px;
   height: 60px;
-  border: none;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
   border: 1px solid white;
-}
-main .section-1 .container .box a button:hover {
-  cursor: pointer;
 }
 @media (min-width: 1024px) {
   main .section-1 .container .box a button {
@@ -393,7 +465,6 @@ main .section-2 {
 @media (min-width: 1600px) {
   main .section-2 {
     padding-top: 300px;
-    padding-inline: 200px;
   }
 }
 main .section-2 .container-1 {
@@ -447,16 +518,8 @@ main .section-2 .container-1 .box-1 h2 {
   text-align: center;
 }
 main .section-2 .container-1 .box-1 a button {
-  background-color: rgb(89, 0, 255);
   width: 180px;
   height: 60px;
-  border: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-}
-main .section-2 .container-1 .box-1 a button:hover {
-  cursor: pointer;
 }
 main .section-2 .container-1 img {
   width: 80vw;
@@ -580,16 +643,8 @@ main .section-2 .container-3 .box-3 h2 {
   text-align: center;
 }
 main .section-2 .container-3 .box-3 a button {
-  background-color: rgb(89, 0, 255);
   width: 180px;
   height: 60px;
-  border: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-}
-main .section-2 .container-3 .box-3 a button:hover {
-  cursor: pointer;
 }
 main .section-2 .container-3 img {
   width: 80vw;
@@ -610,19 +665,23 @@ main .section-2 .container-3 img {
   }
 }
 main .section-2 .container-4 {
-  margin-top: 200px;
-  display: grid;
-  justify-items: center;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
-}
-@media (min-width: 768px) {
-  main .section-2 .container-4 {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
-  }
 }
 @media (min-width: 1600px) {
   main .section-2 .container-4 {
@@ -659,13 +718,93 @@ main .section-2 .container-4 .box-4 p {
 main .section-2 .container-4 .box-4 h2 {
   text-align: center;
 }
+@media (min-width: 1024px) {
+  main .section-2 .container-4 .box-4 h2 {
+    text-align: start;
+  }
+}
 main .section-2 .container-4 iframe {
   width: 80vw;
   height: 40vw;
+  margin-top: 30px;
+}
+@media (min-width: 1600px) {
+  main .section-2 .container-4 iframe {
+    width: 80vw;
+  }
+}
+main .middle-container {
+  margin-top: 100px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/tft-mid-img.webp");
+  background-size: cover;
 }
 @media (min-width: 768px) {
-  main .section-2 .container-4 iframe {
-    width: 40vw;
-    height: 25vw;
+  main .middle-container {
+    height: 500px;
   }
+}
+@media (min-width: 1024px) {
+  main .middle-container {
+    height: 600px;
+  }
+}
+main .middle-container .main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+main .middle-container .main-box p {
+  width: 80%;
+}
+@media (min-width: 768px) {
+  main .middle-container .main-box p {
+    width: 50%;
+  }
+}
+@media (min-width: 1600px) {
+  main .middle-container .main-box p {
+    width: 35%;
+  }
+}
+@media (min-width: 768px) {
+  main .middle-container .main-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  main .middle-container .main-box h2 {
+    width: 20%;
+  }
+}
+@media (min-width: 1600px) {
+  main .middle-container .main-box h2 {
+    width: 100%;
+  }
+}
+main .middle-container a button {
+  margin-top: 30px;
+  width: 200px;
+  height: 60px;
 }/*# sourceMappingURL=tft.css.map */

@@ -3,70 +3,9 @@
 @import './mixins';
 @import './private';
 @import './header';
+@import './responsive-title';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-h1 {
-    font-size: 36px;
-    font-weight: 700;
-
-    @media (min-width: $l) {
-        font-size: 40px;
-        font-weight: 800;
-    }
-    @media (min-width: $xl) {
-        font-size: 50px;
-        font-weight: 800;
-    }
-}
-
-h2 {
-    font-size: 32px;
-    font-weight: 700;
-    @media (min-width: $l) {
-        font-size: 36px;
-        font-weight: 800;
-    }
-    @media (min-width: $xl) {
-        font-size: 46px;
-        font-weight: 800;
-    }
-}
-
-h3 {
-    font-size: 24px;
-    font-weight: 600;
-    @media (min-width: $l) {
-        font-size: 34px;
-        font-weight: 700;
-    }
-    @media (min-width: $xl) {
-        font-size: 42px;
-        font-weight: 800;
-    }
-}
-
-h4 {
-    font-size: 22px;
-    font-weight: 600;
-}
-
-h5 {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-h6 {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-p {
-    @media (min-width: $l) {
-        font-size: 18px;
-        font-weight: 500;
-    }
-
-}
+@import './footer';
 
 body {
     background-color: rgb(22, 0, 0);
@@ -76,6 +15,23 @@ body {
         Arial,
         sans-serif;
     -webkit-font-smoothing: antialiased;
+}
+
+.header-tft {
+    color: red;
+
+    &::before {
+        content: '';
+        width: 160%;
+        height: 40px;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        z-index: -1;
+    }
 }
 
 //* main
@@ -139,19 +95,10 @@ main {
                 a {
 
                     button {
-
-                        background-color: rgb(89, 0, 255);
                         width: 250px;
                         height: 60px;
-                        border: none;
-                        color: white;
-                        font-size: 20px;
-                        font-weight: 600;
                         border: 1px solid white;
-
-                        &:hover {
-                            cursor: pointer;
-                        }
+                        @extend %def-btn;
 
                         @media(min-width: $l) {
                             width: 300px;
@@ -175,12 +122,13 @@ main {
         background-size: cover;
         padding-top: 50px;
         padding-bottom: 100px;
+
         @media(min-width: $xl) {
             padding-top: 300px;
-            padding-inline: 200px;
         }
+
         .container-1 {
-            
+
             display: grid;
             justify-items: center;
             align-items: center;
@@ -191,18 +139,22 @@ main {
                 gap: 0px;
 
             }
+
             .box-1 {
                 @media(min-width: $md) {
                     order: 2;
                 }
+
                 @include flex-col;
                 gap: 30px;
 
                 p {
                     width: 80%;
+
                     @media(min-width: $md) {
                         width: 60%;
                     }
+
                 }
 
                 h2 {
@@ -212,35 +164,30 @@ main {
                 a {
 
                     button {
-                        background-color: rgb(89, 0, 255);
                         width: 180px;
                         height: 60px;
-                        border: none;
-                        color: white;
-                        font-size: 18px;
-                        font-weight: 600;
+                        @extend %def-btn;
 
-
-                        &:hover {
-                            cursor: pointer;
-                        }
                     }
                 }
             }
 
             img {
                 width: 80vw;
+
                 @media(min-width: $md) {
                     width: 40vw;
-                    
+
                 }
+
                 @media(min-width: $l) {
                     width: 50vw;
-                    
+
                 }
+
                 @media(min-width: $xl) {
                     width: 40vw;
-                    
+
                 }
             }
         }
@@ -251,17 +198,20 @@ main {
             justify-items: center;
             align-items: center;
             gap: 30px;
+
             @media(min-width: $md) {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 0px;
 
             }
+
             .box-2 {
                 @include flex-col;
                 gap: 30px;
 
                 p {
                     width: 80%;
+
                     @media(min-width: $md) {
                         width: 60%;
                     }
@@ -279,12 +229,12 @@ main {
 
                 @media(min-width: $md) {
                     width: 40vw;
-                    
+
                 }
-                
+
             }
 
-            
+
         }
 
         .container-3 {
@@ -293,20 +243,24 @@ main {
             justify-items: center;
             align-items: center;
             gap: 30px;
+
             @media(min-width: $md) {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 0px;
-                
+
             }
+
             .box-3 {
                 @media(min-width: $md) {
                     order: 2;
                 }
+
                 @include flex-col;
                 gap: 30px;
 
                 p {
                     width: 80%;
+
                     @media(min-width: $md) {
                         width: 60%;
                     }
@@ -319,59 +273,51 @@ main {
                 a {
 
                     button {
-                        background-color: rgb(89, 0, 255);
                         width: 180px;
                         height: 60px;
-                        border: none;
-                        color: white;
-                        font-size: 18px;
-                        font-weight: 600;
+                        @extend %def-btn;
 
-
-                        &:hover {
-                            cursor: pointer;
-                        }
                     }
                 }
             }
 
             img {
                 width: 80vw;
+
                 @media(min-width: $md) {
                     width: 40vw;
-                    
+
                 }
+
                 @media(min-width: $l) {
                     width: 50vw;
-                    
+
                 }
+
                 @media(min-width: $xl) {
                     width: 40vw;
-                    
+
                 }
             }
         }
 
         .container-4 {
-            margin-top: 200px;
-            display: grid;
-            justify-items: center;
-            align-items: center;
+            margin-top: 100px;
+            @include flex-col;
             gap: 30px;
-            @media(min-width: $md) {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0px;
-            }
+
             @media(min-width: $xl) {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 30px;
             }
+
             .box-4 {
                 @include flex-col;
                 gap: 30px;
 
                 p {
                     width: 80%;
+
                     @media(min-width: $md) {
                         width: 60%;
                     }
@@ -379,6 +325,10 @@ main {
 
                 h2 {
                     text-align: center;
+
+                    @media(min-width: $l) {
+                        text-align: start;
+                    }
                 }
 
             }
@@ -386,10 +336,73 @@ main {
             iframe {
                 width: 80vw;
                 height: 40vw;
-                @media(min-width: $md) {
-                    width: 40vw;
-                    height: 25vw;
+                margin-top: 30px;
+
+                @media(min-width: $xl) {
+                    width: 80vw;
+
                 }
+            }
+        }
+    }
+
+    .middle-container {
+        margin-top: 100px;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url("../images/tft-mid-img.webp");
+        background-size: cover;
+
+        @media(min-width: $md) {
+            height: 500px;
+        }
+
+        @media(min-width: $l) {
+            height: 600px;
+        }
+
+        .main-box {
+            @include flex-col;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            gap: 20px;
+
+            p {
+                width: 80%;
+
+                @media(min-width: $md) {
+                    width: 50%;
+                }
+
+                @media(min-width: $xl) {
+                    width: 35%;
+                }
+            }
+
+            @media(min-width: $md) {
+                align-items: flex-start;
+                padding-left: 5%;
+            }
+
+            h2 {
+                @media(min-width: $l) {
+                    width: 20%;
+                }
+
+                @media(min-width: $xl) {
+                    width: 100%;
+                }
+            }
+        }
+
+        a {
+            button {
+                margin-top: 30px;
+                width: 200px;
+                height: 60px;
+                @extend %def-btn;
             }
         }
     }
