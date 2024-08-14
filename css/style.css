@@ -510,7 +510,7 @@ main .section-2 .container:hover {
 }
 @media (min-width: 1600px) {
   main .section-2 .container {
-    width: 70%;
+    width: 90%;
     height: 700px;
   }
 }
