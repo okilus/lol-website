@@ -1,0 +1,201 @@
+@import './reset';
+@import './variables';
+@import './mixins';
+@import './private';
+@import './header';
+@import './responsive-title';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './footer';
+
+body {
+    background-color: rgb(22, 0, 0);
+    color: white;
+    font-size: 1em;
+    font-family: 'Mark Pro',
+        Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header-lol {
+    color: red;
+
+    &::before {
+        content: '';
+        width: 160%;
+        height: 40px;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        z-index: -1;
+    }
+}
+
+//* main
+main {
+
+
+    .section-1 {
+
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vw;
+            @media(min-width: $sm) {
+                height: 80vw;
+            }
+            @media(min-width: $md) {
+                height: 60vw;
+            }
+            
+            video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: -50px;
+                left: 0;
+
+                @media(min-width: $md) {
+                    top: 10px;
+                }
+
+                @media(min-width: $l) {
+                    display: inline-block;
+                }
+
+                @media(min-width: $xl) {
+                    display: inline-block;
+                    top: -100px;
+                    
+                }
+            }
+
+
+            .box {
+                @include flex-col;
+                gap: 20px;
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @media(min-width: $sm) {
+                    gap: 30px;
+                }
+                @media(min-width: $md) {
+                    gap: 40px;
+                }
+                @media(min-width: $l) {
+                    top: 50%;
+                }
+                h1 {
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-size: 20px;
+
+                    @media(min-width: $sm) {
+                        font-size: 24px;
+
+                    }
+                    @media(min-width: $md) {
+                        font-size: 36px;
+
+                    }
+
+                }
+
+                a {
+
+                    button {
+                        color: rgba(0, 0, 0, 0.8);
+                        width: 160px;
+                        height: 40px;
+                        border: 1px solid white;
+                        font-size: 16px;
+                        @extend %def-btn;
+                        background-color: $lol-btn-color;
+                        @media(min-width: $sm) {
+                            width: 180px;
+                            height: 50px;
+                        }
+                        @media(min-width: $md) {
+                            width: 220px;
+                            height: 60px;
+                        }
+                        @media(min-width: $xl) {
+                            width: 280px;
+                            height: 70px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .section-2 {
+        margin-top: -130px;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url("../images/lol-mode.avif");
+        background-size: cover;
+
+        @media(min-width: $md) {
+            height: 500px;
+        }
+
+        @media(min-width: $l) {
+            height: 600px;
+            margin-top: -80px;
+        }
+        @media(min-width: $xl) {
+            margin-top: -150px;
+        }
+
+        .main-box {
+            @include flex-col;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            gap: 20px;
+
+            p {
+                width: 80%;
+
+                @media(min-width: $sm) {
+                    width: 50%;
+                }
+            }
+
+            @media(min-width: $md) {
+                align-items: flex-start;
+                padding-left: 5%;
+            }
+
+        }
+
+        a {
+            button {
+                margin-top: 30px;
+                width: 200px;
+                height: 60px;
+                @extend %def-btn;
+                background-color: $lol-btn-color;
+                
+            }
+        }
+    }
+    
+
+    .section-3 {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        background-image: url("../images/lol-section2-bg.webp");
+        background-size: cover;
+    }
+}
