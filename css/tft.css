@@ -447,6 +447,12 @@ main .section-1 .container .box a button {
   width: 250px;
   height: 60px;
   border: 1px solid white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .section-1 .container .box a button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(white));
+  background: linear-gradient(to right, red, white);
 }
 @media (min-width: 1024px) {
   main .section-1 .container .box a button {
@@ -521,6 +527,12 @@ main .section-2 .container-1 .box-1 h2 {
 main .section-2 .container-1 .box-1 a button {
   width: 200px;
   height: 60px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .section-2 .container-1 .box-1 a button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(white));
+  background: linear-gradient(to right, red, white);
 }
 main .section-2 .container-1 img {
   width: 80vw;
@@ -646,6 +658,12 @@ main .section-2 .container-3 .box-3 h2 {
 main .section-2 .container-3 .box-3 a button {
   width: 180px;
   height: 60px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .section-2 .container-3 .box-3 a button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(white));
+  background: linear-gradient(to right, red, white);
 }
 main .section-2 .container-3 img {
   width: 80vw;
@@ -808,4 +826,10 @@ main .middle-container a button {
   margin-top: 30px;
   width: 200px;
   height: 60px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+main .middle-container a button:hover {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(white));
+  background: linear-gradient(to right, red, white);
 }/*# sourceMappingURL=tft.css.map */

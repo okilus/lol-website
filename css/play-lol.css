@@ -360,10 +360,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.header-tft {
+.header-lol {
   color: red;
 }
-.header-tft::before {
+.header-lol::before {
   content: "";
   width: 160%;
   height: 40px;
@@ -433,4 +433,4 @@ main .section-1 .container .box a .windows-btn {
 }
 main .section-1 .container .box a .mac-btn {
   background-color: orangered;
-}/*# sourceMappingURL=play-tft.css.map */
+}/*# sourceMappingURL=play-lol.css.map */

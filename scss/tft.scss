@@ -17,6 +17,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+
 .header-tft {
     color: $header-li-a-color;
 
@@ -100,7 +102,10 @@ main {
                         height: 60px;
                         border: 1px solid white;
                         @extend %def-btn;
-
+                        @include transition;
+                        &:hover {
+                            background: linear-gradient(to right,red,white);
+                        }
                         @media(min-width: $l) {
                             width: 300px;
                             height: 70px;
@@ -168,7 +173,11 @@ main {
                         width: 200px;
                         height: 60px;
                         @extend %def-btn;
+                        @include transition;
+                        &:hover {
+                            background: linear-gradient(to right,red,white);
 
+                        }
                     }
                 }
             }
@@ -277,7 +286,11 @@ main {
                         width: 180px;
                         height: 60px;
                         @extend %def-btn;
+                        @include transition;
+                        &:hover {
+                            background: linear-gradient(to right,red,white);
 
+                        }
                     }
                 }
             }
@@ -404,6 +417,11 @@ main {
                 width: 200px;
                 height: 60px;
                 @extend %def-btn;
+                @include transition;
+                &:hover {
+                    background: linear-gradient(to right,red,white);
+
+                }
             }
         }
     }
