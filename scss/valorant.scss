@@ -1,0 +1,531 @@
+@import './reset';
+@import './variables';
+@import './mixins';
+@import './private';
+@import './header';
+@import './responsive-title';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import './footer';
+
+body {
+    background-color: rgb(22, 0, 0);
+    color: white;
+    font-size: 1em;
+    font-family: 'Mark Pro',
+        Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header-valorant {
+    color: $header-li-a-color;
+
+    &::before {
+        content: '';
+        width: 160%;
+        height: 40px;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        z-index: -1;
+    }
+}
+
+//* main
+main {
+
+
+    .section-1 {
+
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100vw;
+
+            @media(min-width: $sm) {
+                height: 80vw;
+            }
+
+            @media(min-width: $md) {
+                height: 60vw;
+            }
+
+            video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: -50px;
+                left: 0;
+
+                @media(min-width: $md) {
+                    top: 10px;
+                }
+
+                @media(min-width: $l) {
+                    display: inline-block;
+                }
+
+                @media(min-width: $xl) {
+                    display: inline-block;
+                    top: -100px;
+
+                }
+            }
+
+
+            .box {
+                @include flex-col;
+                gap: 20px;
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                @media(min-width: $sm) {
+                    gap: 30px;
+                }
+
+                @media(min-width: $md) {
+                    gap: 40px;
+                }
+
+                @media(min-width: $l) {
+                    top: 50%;
+                }
+
+                h1 {
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.9);
+                    font-size: 20px;
+
+                    @media(min-width: $sm) {
+                        font-size: 24px;
+
+                    }
+
+                    @media(min-width: $md) {
+                        font-size: 36px;
+
+                    }
+
+                }
+
+                a {
+
+                    button {
+                        color: rgba(0, 0, 0, 0.8);
+                        width: 160px;
+                        height: 40px;
+                        border: 1px solid white;
+                        font-size: 16px;
+                        @extend %def-btn;
+                        background: $valorant-btn-color;
+                        color: white;
+
+                        &:hover {
+                            background: linear-gradient(to right, rgb(250, 56, 121), rgb(246, 60, 116));
+
+                        }
+
+                        @media(min-width: $sm) {
+                            width: 180px;
+                            height: 50px;
+                        }
+
+                        @media(min-width: $md) {
+                            width: 220px;
+                            height: 60px;
+                        }
+
+                        @media(min-width: $xl) {
+                            width: 280px;
+                            height: 70px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+
+    .section-3 {
+        margin-top: -140px;
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        background-image: url("../images/valorant-section3-bg.webp");
+        background-position: center;
+        background-size: cover;
+        color: black;
+        padding-top: 100px;
+        padding-bottom: 150px;
+        @include flex-col;
+        gap: 50px;
+
+        h3 {
+            align-self: self-start;
+            padding-left: 5%
+        }
+
+        .container {
+            @include flex-col;
+            gap: 30px;
+
+            @media(min-width: $l) {
+                @include flex-row;
+                gap: 40px;
+            }
+
+            @media(min-width: $xl) {
+                gap: 50px;
+            }
+
+            iframe {
+                width: 80vw;
+                height: 40vw;
+
+                @media(min-width: $l) {
+                    width: 28vw;
+                    height: 16vw;
+                }
+            }
+
+        }
+    }
+
+    .section-4 {
+        width: 100%;
+        height: 50vh;
+        background-image: url("../images/valorant-jet.webp");
+        background-size: cover;
+        background-position: center;
+        @include flex-col;
+        align-items: flex-start;
+        padding-left: 5%;
+        gap: 50px;
+
+        @media(min-width: $l) {
+            gap: 0px;
+            height: 70vh;
+        }
+
+        .main-container {
+
+            .container-2 {
+                button {
+                    @extend %xbox-playstation-btn;
+                    height: 70px;
+                    font-size: 16px;
+                    width: 280px;
+                    background: rgb(26, 26, 48);
+                    color: white;
+
+                    &:hover {
+                        background: black;
+
+                    }
+                }
+
+            }
+
+            @include flex-col;
+            align-items: flex-start;
+            gap: 30px;
+
+            @media(min-width: $l) {
+                width: 50%;
+                gap: 50px;
+            }
+
+        }
+    }
+
+    .section-5 {
+        width: 100%;
+        height: 75vh;
+        background-image: url("../images/valorant-section-bg.webp");
+        background-position: center;
+        background-size: cover;
+        @include flex-col;
+        gap: 50px;
+    
+        @media(min-width: $sm) {
+            height: 95vh;
+        }
+    
+        @media(min-width: $md) {
+            @include flex-row;
+            height: 60vh;
+        }
+    
+        @media(min-width: $l) {
+            @include flex-row;
+            gap: 50px;
+            height: 80vh;
+        }
+    
+        @media(min-width: $xl) {
+            gap: 70px;
+            height: 85vh;
+            padding-left: 7%;
+        }
+    
+        .container {
+            @include flex-col;
+            gap: 30px;
+    
+            @media(min-width: $md) {
+                width: 40%;
+            }
+    
+            @media(min-width: $l) {
+                width: 50%;
+                gap: 50px;
+                align-items: flex-start;
+            }
+    
+            .desc-container {
+                @include flex-col;
+                gap: 20px;
+    
+    
+    
+                @media(min-width: $l) {
+                    gap: 30px;
+                    align-items: flex-start;
+                }
+    
+                @media(min-width: $xl) {
+                    gap: 40px;
+    
+                }
+    
+                p {
+                    text-align: center;
+                    width: 80%;
+    
+                    @media(min-width: $md) {
+                        text-align: start;
+                        width: 90%;
+                    }
+    
+                    @media(min-width: $l) {
+                        width: 70%;
+    
+                    }
+    
+                }
+            }
+    
+    
+            .play-btn-2 {
+                @extend %xbox-playstation-btn;
+                height: 70px;
+                font-size: 16px;
+                width: 80vw;
+                background: rgb(26, 26, 48);
+                color: white;
+    
+                &:hover {
+                    background: black;
+    
+                }
+    
+                @media(min-width: $md) {
+                    width: 200px;
+                }
+            }
+    
+        }
+    
+    
+    
+        img {
+    
+            width: 70vw;
+    
+            @media(min-width: $md) {
+                width: 45vw;
+                order: -1;
+            }
+    
+            @media(min-width: $l) {
+                width: 40vw;
+                order: -1;
+            }
+    
+        }
+    }
+    
+    .section-6 {
+        width: 100%;
+        height: 80vh;
+        background-image: url("../images/lol-section2-bg.webp");
+        background-position: center;
+        background-size: cover;
+        @include flex-col;
+        padding-left: 10%;
+        align-items: flex-start;
+        gap: 10px;
+        color: black;
+    
+        @media(min-width: $md) {
+            padding-left: 0px;
+            align-items: center;
+            height: 60vh;
+        }
+    
+    
+        @media(min-width: $xl) {
+            height: 70vh;
+            padding-inline: 150px;
+
+        }
+    
+        .container {
+            @include flex-col;
+            align-items: flex-start;
+            gap: 30px;
+    
+            @media(min-width: $md) {
+                width: 40%;
+            }
+    
+            .desc-container {
+                @include flex-col;
+                gap: 20px;
+                align-items: flex-start;
+    
+    
+    
+                p {
+                    width: 90%;
+                }
+            }
+    
+    
+            .play-btn-2 {
+                @extend %xbox-playstation-btn;
+                height: 70px;
+                font-size: 16px;
+                width: 80vw;
+                background: $valorant-btn-color;
+    
+                @media(min-width: $md) {
+                    width: 200px;
+                }
+            }
+    
+        }
+    
+        video {
+            width: 80vw;
+            height: 30vh;
+    
+            @media(min-width: $md) {
+                width: 50vw;
+                height: 50vw;
+            }
+    
+            @media(min-width: $l) {
+                width: 35vw;
+                height: 38vh;
+            }
+    
+            @media(min-width: $xl) {
+                width: 40vw;
+                height: 80vh;
+            }
+        }
+    }
+
+    .section-7 {
+        width: 100%;
+        height: 80vh;
+        background-image: url("../images/valorant-section-home2.webp");
+        background-position: center;
+        background-size: cover;
+        @include flex-col;
+        padding-left: 10%;
+        align-items: flex-start;
+        gap: 10px;
+        color: black;
+    
+        @media(min-width: $md) {
+            padding-left: 0px;
+            align-items: center;
+            height: 60vh;
+        }
+    
+    
+        @media(min-width: $xl) {
+            height: 70vh;
+            padding-inline: 150px;
+        }
+    
+        .container {
+            @include flex-col;
+            align-items: flex-start;
+            gap: 30px;
+    
+            @media(min-width: $md) {
+                width: 40%;
+            }
+    
+            .desc-container {
+                @include flex-col;
+                gap: 20px;
+                align-items: flex-start;
+    
+    
+    
+                p {
+                    width: 90%;
+                }
+            }
+    
+    
+            .play-btn-2 {
+                @extend %xbox-playstation-btn;
+                height: 70px;
+                font-size: 16px;
+                width: 80vw;
+                background: $valorant-btn-color;
+    
+                @media(min-width: $md) {
+                    width: 200px;
+                }
+            }
+    
+        }
+    
+        img {
+            width: 80vw;
+            height: 30vh;
+    
+            @media(min-width: $md) {
+                width: 50vw;
+                height: 50vw;
+            }
+    
+            @media(min-width: $l) {
+                width: 35vw;
+                height: 38vh;
+            }
+    
+            @media(min-width: $xl) {
+                width: 40vw;
+                height: 60vh;
+            }
+        }
+    
+    
+    
+    }
+}
+
