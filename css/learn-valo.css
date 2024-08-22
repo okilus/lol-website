@@ -90,8 +90,8 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 20px 50px;
-    background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(rgb(131, 0, 0)), to(rgb(0, 0, 0)));
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(131, 0, 0), rgb(0, 0, 0));
+    background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), color-stop(rgb(59, 0, 0)), to(rgb(0, 0, 0)));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(59, 0, 0), rgb(0, 0, 0));
     position: fixed;
     top: 0;
     left: 0;
@@ -222,13 +222,13 @@ h1 {
 }
 @media (min-width: 1024px) {
   h1 {
-    font-size: 50px;
+    font-size: 46px;
     font-weight: 800;
   }
 }
 @media (min-width: 1600px) {
   h1 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 800;
   }
 }
@@ -239,13 +239,13 @@ h2 {
 }
 @media (min-width: 1024px) {
   h2 {
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 700;
   }
 }
 @media (min-width: 1600px) {
   h2 {
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 700;
   }
 }
@@ -256,13 +256,13 @@ h3 {
 }
 @media (min-width: 1024px) {
   h3 {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
   }
 }
 @media (min-width: 1600px) {
   h3 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
   }
 }
@@ -273,13 +273,13 @@ h4 {
 }
 @media (min-width: 1024px) {
   h4 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
   }
 }
 @media (min-width: 1600px) {
   h4 {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 600;
   }
 }
@@ -290,13 +290,13 @@ h5 {
 }
 @media (min-width: 1024px) {
   h5 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
   }
 }
 @media (min-width: 1600px) {
   h5 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
   }
 }
@@ -307,13 +307,13 @@ h6 {
 }
 @media (min-width: 1024px) {
   h6 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
   }
 }
 @media (min-width: 1600px) {
   h6 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
   }
 }

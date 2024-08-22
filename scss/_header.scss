@@ -6,7 +6,7 @@ header {
         @include flex-row();
         justify-content: space-between;
         padding: 20px 50px;
-        background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(131, 0, 0, 1), rgba(0, 0, 0, 1));
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(59, 0, 0), rgb(0, 0, 0));
         position: fixed;
         top: 0;
         left: 0;
