@@ -331,6 +331,36 @@ main {
                         }
                     }
                 }
+
+                a {
+                    .careers {
+                        width: 60vw;
+                        height: 60px;
+                        background-color: rgb(255, 50, 50);
+                        border: none;
+                        color: whitesmoke;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 16px;
+
+                        &:hover {
+                            @extend %button-hover;
+                        }
+
+                        @media (min-width: $md) {
+                            width: 500px;
+                        }
+
+                        @media (min-width: $l) {
+                            width: 400px;
+                            height: 70px;
+                        }
+
+                        @media (min-width: $xl) {
+                            width: 500px;
+                        }
+                    }
+                }
             }
 
             img {
