@@ -103,7 +103,7 @@ main .section-3 .grp-3 .container-3__box-3 h6, main .section-3 .grp-2 .container
           transform: translateY(-50%);
 }
 
-main .section-4 .container .box-1 a .careers:hover, main .play-now:hover {
+main .play-now:hover {
   background: -webkit-gradient(linear, left top, right top, from(rgb(255, 40, 32)), to(rgb(251, 84, 84)));
   background: linear-gradient(to right, rgb(255, 40, 32), rgb(251, 84, 84));
   color: white;
@@ -763,32 +763,6 @@ main .section-4 .container .box-1 .grp .positions h5,
 main .section-4 .container .box-1 .grp .offices h5 {
   padding-top: 10px;
   color: rgb(95, 95, 95);
-}
-main .section-4 .container .box-1 a .careers {
-  width: 60vw;
-  height: 60px;
-  background-color: rgb(255, 50, 50);
-  border: none;
-  color: whitesmoke;
-  font-size: 20px;
-  font-weight: 600;
-  border-radius: 16px;
-}
-@media (min-width: 768px) {
-  main .section-4 .container .box-1 a .careers {
-    width: 500px;
-  }
-}
-@media (min-width: 1024px) {
-  main .section-4 .container .box-1 a .careers {
-    width: 400px;
-    height: 70px;
-  }
-}
-@media (min-width: 1600px) {
-  main .section-4 .container .box-1 a .careers {
-    width: 500px;
-  }
 }
 main .section-4 .container img {
   width: 100%;
