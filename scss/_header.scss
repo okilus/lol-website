@@ -20,13 +20,13 @@ header {
             display: none;
             @media(min-width: $l) {
                 display: flex;
-                gap: 50px;
+                gap: 60px;
                 font-weight: 500;
             }
 
             @media(min-width: $xl) {
                 font-size: 18px;
-                gap: 80px;
+                gap: 100px;
             }
         }
 
@@ -36,7 +36,7 @@ header {
             transition: all 0.5s ease;
             
             &:hover {
-                color: red;
+                color: black;
             }
             
             &:hover::after {
@@ -48,7 +48,7 @@ header {
                 bottom: -20px;
                 left: 50%;
                 transform: translateX(-50%);
-                background-color: white;
+                background-color: lightgray;
             }
             &:hover::before {
                 content: '';
@@ -59,7 +59,7 @@ header {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color: black;
+                background-color: lightgray;
                 z-index: -1;
             }
             
@@ -113,3 +113,4 @@ header {
         }
     }
 }
+

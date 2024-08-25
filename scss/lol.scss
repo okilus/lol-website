@@ -17,8 +17,14 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+header {
+    @media(min-width: $l) {
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 92, 150), rgb(0, 0, 0));
+    }
+}
+
 .header-lol {
-    color: $header-li-a-color;
+    color: black;
 
     &::before {
         content: '';
@@ -29,7 +35,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: black;
+        background-color: white;
         z-index: -1;
     }
 }
@@ -149,67 +155,9 @@ main {
         }
     }
 
-    .section-2 {
-        margin-top: -130px;
-        position: relative;
-        width: 100%;
-        height: 400px;
-        background-image: url("../images/lol-mode.avif");
-        background-size: cover;
-
-        @media(min-width: $md) {
-            height: 500px;
-        }
-
-        @media(min-width: $l) {
-            height: 600px;
-            margin-top: -80px;
-        }
-
-        @media(min-width: $xl) {
-            margin-top: -150px;
-            height: 800px;
-        }
-
-        .main-box {
-            @include flex-col;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            gap: 20px;
-
-            p {
-                width: 80%;
-
-                @media(min-width: $sm) {
-                    width: 50%;
-                }
-            }
-
-            @media(min-width: $md) {
-                align-items: flex-start;
-                padding-left: 5%;
-            }
-
-        }
-
-        a {
-            button {
-                margin-top: 30px;
-                width: 200px;
-                height: 60px;
-                @extend %def-btn;
-                background-color: $lol-btn-color;
-                &:hover {
-                    background: linear-gradient(to right,gold,orange);
-
-                }
-            }
-        }
-    }
-
 
     .section-3 {
+        margin-top: -130px;
         position: relative;
         width: 100%;
         height: fit-content;
@@ -220,6 +168,10 @@ main {
         padding-bottom: 150px;
         @include flex-col;
         gap: 50px;
+
+        @media(min-width: $xl) {
+            margin-top: -160px;
+        }
 
         h3 {
             align-self: self-start;
@@ -254,19 +206,15 @@ main {
 
     .section-4 {
         width: 100%;
-        height: 125vh;
+        height: 105vh;
         background-image: url("../images/lol-section4-bg2.jpg");
         background-size: cover;
         @include flex-col;
-        gap: 50px;
+
 
         @media(min-width: $l) {
             @include flex-row;
-            gap: 0px;
             height: 80vh;
-        }
-        @media(min-width: $xl) {
-            height: 90vh;
         }
 
         .main-container {
@@ -295,6 +243,10 @@ main {
                 p {
                     text-align: center;
                     width: 80%;
+                }
+
+                h2 {
+                    text-align: center
                 }
             }
 
@@ -338,7 +290,7 @@ main {
     .section-5 {
         width: 100%;
         height: 110vh;
-        background-image: url("../images/lol-section5-bg.jpg");
+        background-image: url("../images/akali-bg1.webp");
         background-size: cover;
         @include flex-col;
         gap: 50px;
@@ -389,6 +341,10 @@ main {
                     }
 
                 }
+
+                h2 {
+                    text-align: center;
+                }
             }
 
 
@@ -423,7 +379,7 @@ main {
     .section-6 {
         width: 100%;
         height: 110vh;
-        background-image: url("../images/lol-section6-bg2.jpg");
+        background-image: url("../images/akali-bg2.webp");
         background-size: cover;
         @include flex-col;
         gap: 50px;
@@ -466,6 +422,10 @@ main {
                     @media(min-width: $xl) {
                         width: 70%;
                     }
+                }
+
+                h2 {
+                    text-align: center;
                 }
             }
 
@@ -543,53 +503,6 @@ main {
                 }
             }
 
-        }
-    }
-
-
-    .section-8 {
-        width: 100%;
-        height: 40vh;
-        position: relative;
-
-        @media(min-width: $md) {
-            height: 55vh;
-        }
-        @media(min-width: $l) {
-            height: 70vh;
-        }
-        @media(min-width: $l) {
-            height: 80vh;
-        }
-
-
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        button {
-            position: absolute;
-            @include position-center;
-            @extend %def-btn;
-            width: 170px;
-            height: 50px;
-            background-color: $lol-btn-color;
-            font-size: 16px;
-            &:hover {
-                background: linear-gradient(to right,gold,orange);
-
-            }
-            @media(min-width: $md) {
-                width: 180px;
-                height: 60px;
-            }
-            @media(min-width: $l) {
-                width: 210px;
-                height: 70px;
-            }
         }
     }
 }

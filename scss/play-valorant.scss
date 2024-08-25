@@ -17,6 +17,29 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+header {
+    @media(min-width: $l) {
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(150, 75, 0), rgb(0, 0, 0));
+    } 
+}
+
+.header-valorant {
+    color: black;
+
+    &::before {
+        content: '';
+        width: 160%;
+        height: 40px;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        z-index: -1;
+    }
+}
+
 //* main
 main {
 
@@ -81,14 +104,14 @@ main {
             }
 
             .xbox {
-                background-color: rgb(1, 0, 36);
+                background-color: rgb(36, 0, 0);
                 color: white;
             }
         }
     }
 
     .section-2 {
-        background-color: rgb(0, 1, 25);
+        background-color: rgb(18, 0, 0);
         width: 100%;
         @include flex-col;
         gap: 40px;

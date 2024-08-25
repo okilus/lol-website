@@ -16,11 +16,16 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 header {
+    @media(min-width: $l) {
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(150, 75, 0), rgb(0, 0, 0));
+    } 
+}
+header {
     color: white;
 }
 
 .header-valorant {
-    color: $header-li-a-color;
+    color: black;
 
     &::before {
         content: '';
@@ -31,7 +36,7 @@ header {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: black;
+        background-color: white;
         z-index: -1;
     }
 }

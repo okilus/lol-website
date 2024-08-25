@@ -24,7 +24,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-
+header {
+    @media(min-width: $l) {
+        background: linear-gradient(to right, rgb(0, 0, 0), rgb(150, 0, 0), rgb(0, 0, 0));
+    } 
+}
 
 .section-1 {
     background-color: white;
